@@ -1,7 +1,9 @@
 {
-  "name": "btl-ultra-femme-360",
+  "name": "btl-ultra-femme-360-front",
   "compatibility_date": "2025-10-17",
+  "main": "worker.js",
   "assets": {
-    "directory": "./dist"
+    "directory": "./dist",
+    "binding": "ASSETS"
   }
 }
