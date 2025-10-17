@@ -3,7 +3,7 @@ import { errorMsgAtom, fullNameAtom } from "../../store";
 import { useRef } from "react";
 import {
   errorStyles,
-  headingStyles,
+  // headingStyles,
   inputFieldContainerStyles,
   inputFieldStyles,
   stepContainerStyles,

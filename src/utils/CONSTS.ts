@@ -11,4 +11,4 @@ export const REDIRECT_TIMEOUT = 3 * 60 * 1000;
 
 export const API_BASE_URL =
   import.meta.env.VITE_API_URL ||
-  "https://btl-ultra-femme-360-backend.vercel.app";
+  "https://btl-ultra-femme-360-backend.vercel.app/";
