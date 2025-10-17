@@ -68,6 +68,8 @@ export const cityMsgAtom = atom("");
 export const isPrivayReadAtom = atom(false);
 
 export const timerStartTimeAtom = atom<number | null>(null);
-export const timerIntervalIdAtom = atom<NodeJS.Timeout | null>(null);
+export const timerIntervalIdAtom = atom<ReturnType<typeof setInterval> | null>(
+  null
+);
 
 export const otpAttemptsAtom = atom<number>(0);
