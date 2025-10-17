@@ -17,7 +17,7 @@ const StepTwo = () => {
           <span
             key={index}
             className={cn(
-              "py-4 px-2 rounded-lg bg-white cursor-pointer border-themeBlue border-4 w-40 md:w-48 max-w-full text-center text-lg md:text-3xl select-none",
+              "py-4 px-2 rounded-lg bg-white cursor-pointer border-themeBlue border-4 w-40 md:w-48 max-w-full text-center text-lg md:text-3xl select-none flex justify-center items-center",
               {
                 "bg-themeBlue text-white": problemSuffering === option,
               }

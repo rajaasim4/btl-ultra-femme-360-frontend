@@ -16,7 +16,7 @@ const StepThree = () => {
           <span
             key={index}
             className={cn(
-              "w-36 md:w-52 px-2 py-4 rounded-lg border-themeBlue border-4 bg-white cursor-pointer text-lg md:text-3xl text-center",
+              "w-36 md:w-52 px-2 py-4 rounded-lg border-themeBlue border-4 bg-white cursor-pointer text-lg md:text-3xl text-center flex justify-center items-center",
               {
                 "bg-themeBlue text-white": dealingTime === option,
               }
