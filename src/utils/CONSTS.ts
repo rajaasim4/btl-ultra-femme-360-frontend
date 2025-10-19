@@ -1,7 +1,7 @@
 export const WEBHOOK_URL =
-  "https://hooks.zapier.com/hooks/catch/12961765/2g6o0r2/" as const;
+  "https://hooks.zapier.com/hooks/catch/12961765/ur39kew/" as const;
 export const WEBHOOK_URL_UNVERIFIED =
-  "https://hooks.zapier.com/hooks/catch/12961765/2lfbo4h/" as const;
+  "https://hooks.zapier.com/hooks/catch/12961765/ur39sga/" as const;
 
 export const GTM_ID = "GTM-WK7S6V7G" as const;
 
