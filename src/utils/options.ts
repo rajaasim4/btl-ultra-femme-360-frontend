@@ -13,7 +13,7 @@ export type DocumentOfFamilyMemberOptions =
 //
 export const StepTwoOptions = [
   "יובש",
-  " דליפת שת",
+  "דליפת שתן",
   // "צריבה",
   "כאב ביחסים",
   "תחושת רפיון/התרחבות",

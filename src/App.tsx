@@ -64,7 +64,9 @@ const App = () => {
             <GiftIcon />
             הטבה לחודש הקרוב: הנחה של 2,000 ₪ לחברי קופות החולים
           </div>
-          <p className="text-center">בדיקת התאמה לטיפול בעזרת ™BTL EMSella</p>
+          <p className="text-center">
+            בדיקת התאמה לטיפול בעזרת ™btl-ultra-femme-360
+          </p>
           {!isLoading && currentStep !== 9 && <Stepper />}
           <Header />
           {isLoading && <Loader />}
