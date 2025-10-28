@@ -2,11 +2,12 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { toast } from "sonner";
+import { WEBHOOK_URL_UNVERIFIED } from "../utils/CONSTS";
 
 const Admin = () => {
   const API_BASE_URL = import.meta.env.VITE_API_URL;
 
-  const ZAPIER_WEBHOOK_URL = import.meta.env.WEBHOOK_URL_UNVERIFIED;
+  const ZAPIER_WEBHOOK_URL_UNVERIFIED = WEBHOOK_URL_UNVERIFIED;
   const [error, setError] = useState("");
   interface User {
     _id: number;
@@ -111,17 +112,19 @@ const Admin = () => {
         stepFive,
         stepSix,
         stepSeven,
-
         phoneNumber,
         pageUrl,
         status: status === false ? "Unverified" : "Verified",
       };
 
-      const response = await fetch(ZAPIER_WEBHOOK_URL, {
+      const response = await fetch(ZAPIER_WEBHOOK_URL_UNVERIFIED, {
         method: "POST",
         body: JSON.stringify(zapierData),
       });
-      // const response = await axios.post(ZAPIER_WEBHOOK_URL, zapierData);
+      // const response = await axios.post(
+      //   ZAPIER_WEBHOOK_URL_UNVERIFIED,
+      //   zapierData
+      // );
 
       // Check if the response from Zapier is successful
       if (response.status === 200) {
@@ -134,6 +137,7 @@ const Admin = () => {
         );
       } else {
         toast.error("Failed to send data to Zapier.");
+        console.log(error);
       }
     } catch (error) {
       console.error("Error sending data to Zapier:", error);
