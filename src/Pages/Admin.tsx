@@ -4,12 +4,9 @@ import { useNavigate } from "react-router-dom";
 import { toast } from "sonner";
 
 const Admin = () => {
-  const API_BASE_URL =
-    import.meta.env.VITE_API_URL ||
-    "https://btl-ultra-femme-360-backend.vercel.app";
+  const API_BASE_URL = import.meta.env.VITE_API_URL;
 
-  const ZAPIER_WEBHOOK_URL =
-    "https://hooks.zapier.com/hooks/catch/12961765/2lfbo4h/";
+  const ZAPIER_WEBHOOK_URL = import.meta.env.WEBHOOK_URL_UNVERIFIED;
   const [error, setError] = useState("");
   interface User {
     _id: number;
