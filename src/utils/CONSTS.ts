@@ -3,7 +3,7 @@ export const WEBHOOK_URL =
 export const WEBHOOK_URL_UNVERIFIED =
   "https://hooks.zapier.com/hooks/catch/12961765/urhksv1/" as const;
 
-export const GTM_ID = "GTM-WK7S6V7G" as const;
+export const GTM_ID = "GTM-5CQ8L7T5" as const;
 
 export const OTP_EXPIRY_TIME = 120;
 export const MAX_OTP_ATTEMPTS = 3;
