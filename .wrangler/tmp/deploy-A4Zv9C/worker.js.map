@@ -1,8 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../worker.js"],
-  "sourceRoot": "E:\\Coding\\Work\\btl-ultra-femme-360-frontend\\.wrangler\\tmp\\deploy-A4Zv9C",
-  "sourcesContent": ["export default {\r\n  async fetch(request, env, ctx) {\r\n    const url = new URL(request.url);\r\n\r\n    // Try to fetch static asset first (e.g. /assets/index.js)\r\n    let response = await env.ASSETS.fetch(request);\r\n\r\n    // If not found (404), serve index.html for SPA routes\r\n    if (response.status === 404) {\r\n      // Don\u2019t rewrite requests for static files that are genuinely missing\r\n      if (url.pathname.startsWith(\"/assets/\") || url.pathname.includes(\".\")) {\r\n        return response;\r\n      }\r\n\r\n      // Return index.html for routes like /login, /about, etc.\r\n      return await env.ASSETS.fetch(new Request(`${url.origin}/index.html`));\r\n    }\r\n\r\n    return response;\r\n  },\r\n};\r\n"],
-  "mappings": ";AAAA,IAAO,iBAAQ;AAAA,EACb,MAAM,MAAM,SAAS,KAAK,KAAK;AAC7B,UAAM,MAAM,IAAI,IAAI,QAAQ,GAAG;AAG/B,QAAI,WAAW,MAAM,IAAI,OAAO,MAAM,OAAO;AAG7C,QAAI,SAAS,WAAW,KAAK;AAE3B,UAAI,IAAI,SAAS,WAAW,UAAU,KAAK,IAAI,SAAS,SAAS,GAAG,GAAG;AACrE,eAAO;AAAA,MACT;AAGA,aAAO,MAAM,IAAI,OAAO,MAAM,IAAI,QAAQ,GAAG,IAAI,MAAM,aAAa,CAAC;AAAA,IACvE;AAEA,WAAO;AAAA,EACT;AACF;",
-  "names": []
-}
