@@ -9,6 +9,6 @@ export const OTP_EXPIRY_TIME = 120;
 export const MAX_OTP_ATTEMPTS = 3;
 export const REDIRECT_TIMEOUT = 3 * 60 * 1000;
 
-export const API_BASE_URL =
-  import.meta.env.VITE_API_URL ||
-  "https://btl-ultra-femme-360-backend.vercel.app";
+export const API_BASE_URL = import.meta.env.VITE_API_URL;
+
+// ||"https://btl-ultra-femme-360-backend.vercel.app";
